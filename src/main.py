@@ -8,7 +8,6 @@ from tkinter import messagebox
 
 def validate_int(entry): return entry == '' or entry.isdigit()
 def validate_range(entry): 
-  print(entry)
   if entry == '': return True
   for char in entry:
     if not (char.isdigit() or char == ',' or char == '-' or char == ' '): return False
@@ -69,12 +68,11 @@ def main():
 
   choose_pdf_button = tk.Button(
       root, 
-      text='Save URL', 
+      text='Choose PDF', 
       command=lambda: choose_pdf(root, offset.get(), page_numbers.get()), 
       font=('Segoe UI', 8),
-      state=tk.DISABLED
   )
-  choose_pdf_button.grid(row=4, column=2)
+  choose_pdf_button.grid(row=5, column=2)
 
   root.mainloop()
   
