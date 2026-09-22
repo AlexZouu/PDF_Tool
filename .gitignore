@@ -1,3 +1,6 @@
 /.venv
 __pycache__/
 src/cache/cache.json
+src/build
+src/dist
+src/main.spec
